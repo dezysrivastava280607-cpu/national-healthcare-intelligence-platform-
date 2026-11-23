@@ -1,0 +1,510 @@
+/* =========================================
+   PROFILE LAYOUT
+========================================= */
+
+.profile-layout {
+  width: 100%;
+  min-height: 100vh;
+  background: #f7f9fc;
+  overflow-x: hidden;
+}
+
+.profile-main {
+  margin-left: 260px;
+  width: calc(100% - 260px);
+  min-height: 100vh;
+  background: #f7f9fc;
+}
+
+.profile-page {
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.profile-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.profile-page-header h1 {
+  margin: 0 0 6px;
+  color: #0f172a;
+  font-size: 30px;
+  font-weight: 750;
+  letter-spacing: -0.5px;
+}
+
+.profile-page-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.edit-profile-button,
+.save-profile-button {
+  border: none;
+  background: #0f766e;
+  color: #ffffff;
+  padding: 11px 18px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.edit-profile-button:hover,
+.save-profile-button:hover {
+  background: #0d655f;
+  transform: translateY(-1px);
+}
+
+.profile-header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.cancel-edit-button {
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #334155;
+  padding: 11px 18px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cancel-edit-button:hover {
+  background: #f8fafc;
+}
+
+/* =========================================
+   SUCCESS MESSAGE
+========================================= */
+
+.profile-message {
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #047857;
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* =========================================
+   USER HEADER CARD
+========================================= */
+
+.profile-user-card {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.04);
+  box-sizing: border-box;
+}
+
+.profile-avatar-large {
+  width: 75px;
+  height: 75px;
+  min-width: 75px;
+  border-radius: 20px;
+  background: #0f766e;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.profile-user-details h2 {
+  margin: 0 0 5px;
+  color: #0f172a;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.profile-user-details p {
+  margin: 0 0 6px;
+  color: #0f766e;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.profile-user-details span {
+  color: #475569;
+  font-size: 14px;
+}
+
+/* =========================================
+   PROFILE GRID
+========================================= */
+
+.profile-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   CARDS
+========================================= */
+
+.profile-card {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.04);
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.full-profile-card {
+  grid-column: 1 / -1;
+}
+
+/* =========================================
+   CARD TITLES
+========================================= */
+
+.profile-card-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.profile-card-title > span {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  background: #eff6ff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+}
+
+.profile-card-title h2 {
+  margin: 0 0 4px;
+  color: #0f172a;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.profile-card-title p {
+  margin: 0;
+  color: #64748b;
+  font-size: 12px;
+}
+
+/* =========================================
+   FIELDS
+========================================= */
+
+.profile-fields {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 28px;
+  row-gap: 22px;
+}
+
+.profile-field {
+  min-width: 0;
+}
+
+.profile-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.profile-field strong {
+  display: block;
+  color: #1e293b;
+  font-size: 14px;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.profile-field small {
+  display: block;
+  margin-top: 5px;
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+/* =========================================
+   INPUT / SELECT / TEXTAREA
+========================================= */
+
+.profile-field input,
+.profile-field select,
+.profile-field textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  padding: 12px 14px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+
+  outline: none;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  background: #ffffff !important;
+  color: #1e293b !important;
+  -webkit-text-fill-color: #1e293b;
+
+  box-sizing: border-box;
+  transition: 0.2s ease;
+}
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+.profile-field input::placeholder,
+.profile-field textarea::placeholder {
+  color: #94a3b8;
+  opacity: 1;
+}
+
+/* =========================================
+   FOCUS
+========================================= */
+
+.profile-field input:focus,
+.profile-field select:focus,
+.profile-field textarea:focus {
+  background: #ffffff !important;
+  color: #1e293b !important;
+  border-color: #0f766e;
+
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.08);
+
+  -webkit-text-fill-color: #1e293b;
+}
+
+/* =========================================
+   SELECT
+========================================= */
+
+.profile-field select {
+  cursor: pointer;
+  appearance: auto;
+  -webkit-appearance: auto;
+}
+
+.profile-field select option {
+  background: #ffffff;
+  color: #1e293b;
+}
+
+/* =========================================
+   DATE PICKER
+========================================= */
+
+.date-picker-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.date-input {
+  width: 100%;
+  height: 45px;
+  padding: 12px 48px 12px 14px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+
+  background: #ffffff !important;
+  color: #1e293b !important;
+  -webkit-text-fill-color: #1e293b;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  outline: none;
+  box-sizing: border-box;
+
+  cursor: pointer;
+  color-scheme: light;
+}
+
+.date-input:focus {
+  border-color: #0f766e;
+
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.08);
+}
+
+.calendar-button {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 34px;
+  height: 34px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #eff6ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  font-size: 17px;
+
+  z-index: 2;
+}
+
+.calendar-button:hover {
+  background: #dbeafe;
+}
+
+.date-input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.date-input::-webkit-datetime-edit {
+  color: #1e293b;
+}
+
+.date-input::-webkit-datetime-edit-text {
+  color: #64748b;
+}
+
+.date-input::-webkit-datetime-edit-month-field,
+.date-input::-webkit-datetime-edit-day-field,
+.date-input::-webkit-datetime-edit-year-field {
+  color: #1e293b;
+}
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+.profile-field textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* =========================================
+   STATUS
+========================================= */
+
+.active-status {
+  color: #16a34a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* =========================================
+   ADDRESS
+========================================= */
+
+.address-value {
+  margin: 0;
+  color: #334155;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+  .profile-main {
+    margin-left: 260px;
+    width: calc(100% - 260px);
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-profile-card {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .profile-main {
+    margin-left: 70px;
+    width: calc(100% - 70px);
+  }
+
+  .profile-page {
+    padding: 18px;
+  }
+
+  .profile-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-header-actions {
+    width: 100%;
+  }
+
+  .profile-header-actions button {
+    flex: 1;
+  }
+
+  .profile-fields {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .profile-user-card {
+    padding: 20px;
+  }
+
+  .profile-avatar-large {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    font-size: 24px;
+  }
+}

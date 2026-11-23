@@ -1,0 +1,390 @@
+.appointments-page {
+  min-height: 100vh;
+  background: #f7f9fc;
+  padding: 30px;
+}
+
+/* Header */
+
+.appointments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.appointments-header h1 {
+  margin: 0 0 6px;
+  font-size: 28px;
+  color: #1e293b;
+}
+
+.appointments-header p {
+  margin: 0;
+  color: #64748b;
+}
+
+.book-main-button {
+  border: none;
+  background: #0f766e;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.book-main-button:hover {
+  background: #0d655f;
+}
+
+/* Message */
+
+.appointment-message {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+  border-radius: 10px;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+}
+
+/* Booking */
+
+.booking-card {
+  background: white;
+  border: 1px solid #e8edf5;
+  border-radius: 18px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.04);
+}
+
+.booking-header {
+  margin-bottom: 25px;
+}
+
+.booking-header h2 {
+  margin: 0 0 5px;
+  color: #1e293b;
+}
+
+.booking-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.booking-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  color: #334155;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  outline: none;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #0f766e;
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.08);
+}
+
+.full-form-group {
+  grid-column: 1 / -1;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.booking-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.cancel-form-button,
+.confirm-book-button {
+  padding: 11px 18px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cancel-form-button {
+  background: white;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+}
+
+.confirm-book-button {
+  background: #0f766e;
+  color: white;
+  border: none;
+}
+
+.confirm-book-button:hover {
+  background: #0d655f;
+}
+
+/* Sections */
+
+.appointment-section {
+  background: white;
+  border: 1px solid #e8edf5;
+  border-radius: 18px;
+  padding: 25px;
+  margin-bottom: 22px;
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.04);
+}
+
+.section-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.section-heading h2 {
+  margin: 0 0 5px;
+  color: #1e293b;
+  font-size: 19px;
+}
+
+.section-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.count-badge {
+  min-width: 30px;
+  height: 30px;
+  padding: 0 9px;
+  background: #eff6ff;
+  color: #2563eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+/* Appointment */
+
+.appointment-item {
+  display: grid;
+  grid-template-columns: auto 1.5fr 1fr 1fr auto;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.appointment-item:last-child {
+  border-bottom: none;
+}
+
+.doctor-avatar-large {
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+  background: #eff6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.appointment-doctor h3 {
+  margin: 0 0 5px;
+  color: #1e293b;
+  font-size: 16px;
+}
+
+.appointment-doctor p {
+  margin: 3px 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.appointment-date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.appointment-date > div:first-child {
+  font-size: 20px;
+}
+
+.appointment-date small {
+  display: block;
+  color: #94a3b8;
+  margin-bottom: 3px;
+}
+
+.appointment-date strong {
+  color: #334155;
+  font-size: 13px;
+}
+
+.appointment-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.view-appointment,
+.cancel-appointment {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.view-appointment {
+  color: #2563eb;
+  background: #eff6ff;
+}
+
+.cancel-appointment {
+  color: #dc2626;
+  background: #fef2f2;
+}
+
+/* Empty */
+
+.empty-state {
+  text-align: center;
+  padding: 45px 20px;
+}
+
+.empty-state div {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.empty-state h3 {
+  margin: 0 0 5px;
+  color: #334155;
+}
+
+.empty-state p {
+  margin: 0;
+  color: #64748b;
+}
+
+.small-empty-state {
+  padding: 20px 0;
+  color: #94a3b8;
+}
+
+/* Past */
+
+.past-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.past-item:last-child {
+  border-bottom: none;
+}
+
+.past-item strong {
+  color: #334155;
+}
+
+.past-item p {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.status-cancelled,
+.status-completed {
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-cancelled {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.status-completed {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .appointment-item {
+    grid-template-columns: auto 1fr 1fr;
+  }
+
+  .appointment-actions {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 700px) {
+  .appointments-page {
+    padding: 18px;
+  }
+
+  .appointments-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .booking-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-form-group {
+    grid-column: auto;
+  }
+
+  .appointment-item {
+    grid-template-columns: auto 1fr;
+  }
+
+  .appointment-date {
+    grid-column: 2;
+  }
+
+  .appointment-actions {
+    grid-column: 2;
+    flex-direction: row;
+  }
+}

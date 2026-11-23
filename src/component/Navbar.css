@@ -1,0 +1,190 @@
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  width: 100%;
+  height: 76px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 30px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   LEFT SIDE
+========================================= */
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left h2 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  letter-spacing: -0.3px;
+}
+
+/* =========================================
+   RIGHT SIDE
+========================================= */
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* =========================================
+   NOTIFICATION
+========================================= */
+
+.notification-btn {
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #f8fafc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.notification-btn:hover {
+  background: #eff6ff;
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   USER PROFILE
+========================================= */
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  padding-left: 5px;
+}
+
+/* =========================================
+   USER AVATAR
+========================================= */
+
+.user-avatar {
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  flex-shrink: 0;
+}
+
+/* =========================================
+   USER NAME
+========================================= */
+
+.user-profile > div:last-child {
+  min-width: 0;
+}
+
+.user-profile strong {
+  display: block;
+
+  color: #1e293b;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  line-height: 1.3;
+
+  white-space: nowrap;
+}
+
+.user-profile p {
+  margin: 3px 0 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  line-height: 1.2;
+
+  text-transform: capitalize;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+  .navbar {
+    height: 70px;
+    padding: 0 18px;
+  }
+
+  .navbar-left h2 {
+    font-size: 18px;
+  }
+
+  .navbar-right {
+    gap: 10px;
+  }
+
+  .notification-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  .user-avatar {
+    width: 38px;
+    height: 38px;
+    font-size: 15px;
+  }
+
+  .user-profile p {
+    display: none;
+  }
+
+  .user-profile strong {
+    font-size: 13px;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
